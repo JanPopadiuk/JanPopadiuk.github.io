@@ -26,15 +26,15 @@
   
  
   .linki {
-    display:flex;
+    display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
     background-color:purple;
-    flex-direction:row;
-    justify-content:space-around;
+    
   }
   .side {
     border-color:rgb(75, 1, 75);
     border-style:solid;
-    flex:30%;
+    
     background-color:#2b0b45;
     padding:20px;
   }
@@ -43,7 +43,7 @@
   .main {
     border-colorrgb(75, 1, 75);
     border-style: solid;
-    flex:70%;
+   
     background-color:#2b0b45;
     padding:20px;
   }
@@ -71,8 +71,8 @@
 
   .przedzial {  
     
-    display:flex;
-    flex-wrap:wrap;
+    display: grid;
+  grid-template-columns: 50% 50%;
   }
   
 
@@ -87,12 +87,13 @@
 
   @media screen and (max-width:700px) {
     .przedzial{  
-      flex-direction:column;
+      display: grid;
+  grid-template-columns: 100%;
     }
-  }
-  @media screen and (max-width:700px) {
     .linki {
+        display: grid;
+    grid-template-columns: 100%;
       
-      flex-direction:column;
-    }
+      }
   }
+  
