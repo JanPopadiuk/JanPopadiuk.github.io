@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /licence/
+Disallow: /admin/
+Disallow: /log/
+Sitemap: https://JanPopadiuk.github.io/sitemap.xml
