@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.div {
+    position: relative;
+    width: 80%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#platforma1{
+    background-color: green;
+}
+#platforma2{
+    background-color: red;
+}
+
+
+.platforma {
+    width: 200px;
+    height: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 16px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.helikopter {
+    width: 200px;
+    height: 150px;
+    background-color: #e74c3c;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    animation: lot 6s infinite ease-in-out;
+}
+
+@keyframes lot {
+    0% {
+        left: 0;
+        bottom: 20px;
+        transform: scaleX(1);
+    }
+    25% {
+        left: 50%;
+        bottom: 300px;
+        transform: scaleX(1);
+    }
+    50% {
+        left: calc(100% - 100px);
+        bottom: 20px;
+        
+       
+    }
+    75% {
+        left: 50%;
+        bottom: 300px;
+        transform: scaleX(-1);
+        
+    }
+    100% {
+        left: 0;
+        bottom: 20px;
+        transform: scaleX(-1);
+        
+         /* Turn around to face right again */
+    }
+}
