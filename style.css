@@ -100,7 +100,14 @@ button:hover {
     transition: transform 0.3s;
     background-image: url('hornet.png');
 }
-
+.project3 {
+    background-color: #333;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    background-image: url('apache.png');
+}
 
 .project:hover {
     transform: scale(1.05);
